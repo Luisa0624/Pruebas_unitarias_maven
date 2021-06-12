@@ -25,8 +25,14 @@ public class App {
         Long number2 = Long.valueOf( textNumber2 );
 
         BasicCalculator calculator = new BasicCalculator();
-        Long result = calculator.suma( number1, number2 );
+        Long resultsuma = calculator.suma( number1, number2 );
+        Long resultresta = calculator.resta( number1, number2 );
+        Long resultmulti = calculator.multiplicacion( number1, number2 );
+        Long resultdivision = calculator.division( number1, number2 );
 
-        System.out.println( number1 + " + " + number2 + " = " + result );
+        System.out.println( number1 + " + " + number2 + " = " + resultsuma );
+        System.out.println( number1 + " - " + number2 + " = " + resultresta );
+        System.out.println( number1 + " * " + number2 + " = " + resultmulti );
+        System.out.println( number1 + " / " + number2 + " = " + resultdivision );
     }
 }
